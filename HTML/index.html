@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="Alura, Encriptador, Desencriptador, Challenge, App, Herramienta, Aprendizaje">
+
+    <!-- PARA CUALQUIER NAVEGADOR -->
+    <link rel="icon" href="../ASSETS/images/favicon.ico" sizes="32x32" type="image/ico">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/myStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Quicksand:wght@600&family=Vollkorn:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../JS/myJs.js"></script>
+
+    <title>Encriptador de Texto</title>
+
+</head>
+
+<body>
+    <div class="container0">
+        <div class="container1">
+            <header class="container10">
+                <img id="imgLogo" src="../ASSETS/images/logoAlura.png" alt="Logo Alura">
+            </header>
+            <section class="container11">
+                <div class="textarea1">
+                    <textarea id="textarea" name="textarea" placeholder="Ingrese el texto aquí:"
+                        oninput="ocultarElemento(); ajustarEntrada();"></textarea>
+                </div>
+                <div class="botonLimpiar">
+                    <button class="botonLimpiar1" onclick="limpiar()">
+                        <img class="imgbtn" src="../ASSETS/images/Limpiar1.png" alt="Icono Limpiar">
+                        <span>Limpiar</span>
+                    </button>
+                </div>
+                <div class="aviso1">
+                    <p><img src="../ASSETS/images/bi_exclamation-circle-fill.png" alt="exclamation-circle">
+                        Sólo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="encriptar()">
+                        <img class="imgbtn" src="../ASSETS/images/EncriptImg1A.png" alt="Icono Encriptado">
+                        <span>Encriptar</span>
+                    </button>
+                    <button class="botonDesEncriptar" onclick="desencriptar()">
+                        <img class="imgbtn" src="../ASSETS/images/DesEncriptImg1A.png" alt="Icono DesEncriptado">
+                        <span>Desencriptar</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="container2" id="mi-contenedor2">
+            <section class="container12">
+                <div class="rect1">
+                    <div class="imagen1">
+                        <img src="../ASSETS/images/Muñeco.png" alt="Imagen Buscador" class="img1">
+                    </div>
+                    <div class="textos2" id="texto2">
+                        <p id="textne">Ningún mensaje fue encontrado</p>
+                        <p id="textdescrip">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container22" id="mi-contenedor22">
+            <section class="container12">
+                <div class="rect2">
+                    <div class="textarea2">
+                        <textarea id="textarea2" name="textarea2"></textarea>
+                    </div>
+                    <div class="alterna">
+                        <div class="boton2">
+                            <button class="botonCopiar" id="botonCopiar" onclick="copiar()">
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="boton3">
+                            <button class="botonPegar" id="botonPegar" onclick="pegar()">
+                                Pegar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container3">
+            <footer>
+                <div class="col-lg-6">
+                    <div class="col10">
+                        <small><span class="font-weight-bold">@2023 Encriptador Challenge1,</span>
+                            creado por EdKla7.
+                            <br> Todos los derechos reservados</small>
+                    </div>
+                    <div class="col2">
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github animated"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    Las imágenes pueden estar sujetas a derechos de autor.&nbsp;<a
+                        href="https://support.google.com/legal/answer/3463239?hl=es-419"
+                        jslog="52885;ved:0CBAQlZ0DahcKEwjQ5qCTiu7qAhUAAAAAHQAAAAAQAw;track:click" class="qnLx5b"
+                        target="_blank">Más
+                        información</a>
+                </div>
+                <div class="col-lg-3">
+                    <a class="link-light text-decoration-none me-3" target="_blank"
+                        href="../ASSETS/documents/privacypolicies.html">Privacy Policy</a>
+                    <a class="link-light text-decoration-none" target="_blank"
+                        href="../ASSETS/documents/term&cond.html">Terms
+                        of Use</a>
+                </div>
+            </footer>
+        </div>
+
+
+        <div id="popupContainer" class="popup-container">
+            <div class="popup-content animated1">
+                <h2 class="popup-title">Error en Contenido</h2>
+                <p class="popup-text animated">Lo Siento, debe colocar al menos una vocal, Gracias!!!</p>
+                <button onclick="closePopup()" class="popup-close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
