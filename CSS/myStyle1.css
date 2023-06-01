@@ -1,0 +1,486 @@
+/* **  ESTILOS GENERALES  ** */
+/*
+  Containers 
+  0
+  ------------------------
+  | 1 -->  10     | 2    | 
+  --|-------------|      |
+  | 11            |      |  
+  |               |      | 
+  |               |      |
+  -----------------------
+  | 3                    | 
+  -----------------------
+
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+}
+
+/* ** CONTENEDOR PRINCIPALES Y SUBCONTENEDORES  ** */
+
+.container0 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*  **  ------------------------------------------ ** */
+/* **    COMPONENTES DEL CONTAINER 11          ** */
+
+.textarea1 {
+  width: 70%;
+  height: 71.12%;
+  margin-left: 23.81%;
+  display: flex;
+}
+
+#textarea {
+  color: #0a3871;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 150%; /*  48px;  */
+  background-color: rgba(243, 245, 252, 0.5);
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.botonLimpiar {
+  display: flex;
+  width: 70%;
+  height: 9.45%;
+  margin: auto;
+  margin-left: 23.81%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.botonLimpiar1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  height: 60%;
+  background: #d8dfe8;
+  font-size: 1.9vw;
+  color: #0a3871;
+  padding: 0; /* Relleno del botón */
+  border-color: #0a3871; /* Sin borde */
+  border-radius: 10px; /* Borde redondeado 10px*/
+  cursor: pointer; /* Cursor de tipo puntero */
+  margin-left: 80%;
+}
+
+.botonLimpiar1:active {
+  background-color: #d8dfe8;
+  color: #0a3871;
+}
+
+.aviso1 {
+  width: 70%;
+  height: 4.03%;
+  margin-left: 27.148%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.aviso1 img {
+  width: 1.5vw;
+}
+
+.botones {
+  width: 70%;
+  height: 15.41%;
+  margin-left: 27.148%;
+  /* margin-bottom: 72px; */
+  top: 70%; /* 60px */
+  display: flex;
+  padding: 0.5%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.botones img {
+  width: 3vw;
+  height: 5vh;
+}
+
+.botonEncriptar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 47.2%; /*  300px;  */
+  height: 70%; /*  67px;  */
+  /* border-radius: 10px; */
+  background: #0a3871;
+  font-size: 2.5vw;
+  color: #f3f5fc;
+  padding: 0.5rem 1rem; /* Relleno del botón */
+  border: none; /* Sin borde */
+  border-radius: 24px; /* Borde redondeado */
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+.botonDesEncriptar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 47.2%; /*  300px;  */
+  height: 70%; /*  67px;  */
+  background: #d8dfe8;
+  font-size: 2.5vw;
+  color: #0a3871;
+  padding: 0.5rem 1rem; /* Relleno del botón */
+  border-color: #0a3871; /* Sin borde */
+  border-radius: 24px; /* Borde redondeado */
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+.botonEncriptar:active {
+  background-color: #d8dfe8;
+  color: #0a3871;
+}
+
+.botonDesEncriptar:active {
+  background: #0a3871;
+  color: #f3f5fc;
+}
+
+.imgbtn {
+  margin-right: 10%;
+  width: 20%;
+  height: 80%;
+}
+
+.rect1 {
+  margin: auto;
+  /* position: relative; */
+}
+
+.imagen1 {
+  width: 336px;
+  height: 304px;
+  margin: auto; /* margin-top: 28%; */
+}
+
+.textos2 {
+  width: 336px;
+  height: auto;
+  margin-top: 32px;
+}
+
+#textne {
+  font-family: "Inter";
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+#textdescrip {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: normal;
+}
+
+.rect2 {
+  width: 100%;
+  margin-top: 10%;
+  height: 95%;
+  position: relative;
+  display: block;
+}
+.textarea2 {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+#textarea2 {
+  color: #0a3871;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%; /*  48px;  */
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  border: none;
+  resize: none;
+}
+
+.alterna {
+  width: 100%;
+  height: 15.41%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.boton2,
+.boton3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  height: 10%;
+  margin-top: 0;
+  position: absolute;
+}
+
+/* .boton3{
+                margin-top: -18%;    
+              } */
+
+.botonCopiar,
+.botonPegar {
+  display: flex;
+  width: 91%; /*  300px;  */
+  height: 100%; /*  67px;  */
+  /* border-radius: 10px; */
+  background: #f3f5fc;
+  font-size: 26px;
+  color: #0a3871;
+  padding: 0; /*  0.5rem 1rem Relleno del botón */
+  border-color: #0a3871;
+  /* border: none; / * Sin borde */
+  border-radius: 24px; /* Borde redondeado */
+  cursor: pointer; /* Cursor de tipo puntero */
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.botonCopiar,
+.botonPegar {
+  margin: auto;
+}
+
+.botonCopiar:active,
+.botonPegar:active {
+  background: #0a3871;
+  color: #f3f5fc;
+}
+
+.botonCopiar:hover,
+.botonPegar:hover,
+.botonEncriptar:hover,
+.botonDesEncriptar:hover,
+.botonLimpiar1:hover,
+.popup-close:hover {
+  background-color: #01bdad;
+  color: white;
+}
+
+/*  *****   GENERALES  - VARIOS  *****  */
+.oculto {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.elevar {
+  z-index: 10;
+}
+
+.container22 {
+  display: none;
+}
+
+/* ****** Footer  **** */
+
+footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 0.1% 0;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+.col-lg-6 {
+  display: flex;
+  width: 50%; /* 4 de las 12 columnas */
+  float: left;
+  margin: auto;
+}
+
+.col-lg-3 {
+  width: 25%; /* 3 de las 12 columnas */
+  float: right;
+}
+.col2 {
+  width: 10%; /* 2 de las 12 columnas */
+  float: left;
+  margin-top: 1.5%;
+}
+.col10 {
+  margin-left: 10%;
+  width: 90%; /* 10 de las 12 columnas */
+  float: left;
+  margin-top: 0.4%;
+}
+
+/* ***  ANIMACIONES   *** * */
+
+/* ***  ANIMACIÓN TIPO PULSANTE COMO EL DEL ICONO DE GITHUB *** */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ***  ANIMACIÓN TIPO PULSANTE MENSAJE EMERJENTE *** */
+@keyframes pulse1 {
+  0% {
+    /* background-color: cyan; */
+    border-color: cyan;
+    opacity: 1;
+  }
+  25% {
+    /* background-color: lightblue; */
+    border-color: lightblue;
+    opacity: 0.7;
+  }
+  50% {
+    /* background-color: green; */
+    border-color: rgb(173, 230, 221);
+    opacity: 0.7;
+  }
+  100% {
+    /* background-color: yellow; */
+    border-color: rgb(175, 230, 173);
+    opacity: 1;
+  }
+}
+.animated1 {
+  animation: pulse1 5s infinite alternate;
+}
+
+/* **  CODIGO VENTANA EMERGENTE   ** */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border-width: 1em;
+  border-style: solid;
+}
+
+.popup-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup-text {
+  margin-bottom: 20px;
+}
+
+.popup-close {
+  width: 60%;
+  /* height: 60%; */
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+/* .container01{
+     
+    flex-direction: row;
+}
+.container1{   
+    display: block;
+    flex:1;
+    flex-direction: row;
+}
+.container10{
+    flex-basis:60px;
+    display: flex;
+    flex: 1;
+}
+.container11{
+    display: block;
+    flex: 2;
+}
+
+
+
+.container2, .container22{
+    display: block;
+    flex:2;
+    flex-direction: row;
+}
+
+.container3{
+    flex:2;
+    flex-direction: row;
+}
+
+@media screen and (max-width:480px) {
+    .container0{
+        display: block
+    };
+}
+@media screen and (min-width:480px) and (max-width:780px) {
+    
+}
+@media screen and (min-width:780px) and (max-width:1024) {
+    
+}
+@media screen and (min-width:1024px){
+    
+} */

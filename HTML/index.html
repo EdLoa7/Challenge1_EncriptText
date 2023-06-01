@@ -11,7 +11,7 @@
     <!-- PARA CUALQUIER NAVEGADOR -->
     <link rel="icon" href="../ASSETS/images/favicon.ico" sizes="32x32" type="image/ico">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/myStyle.css">
+    <link rel="stylesheet" href="../CSS/myStyle2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,73 +26,74 @@
 
 <body>
     <div class="container0">
-        <div class="container1">
-            <header class="container10">
-                <img id="imgLogo" src="../ASSETS/images/logoAlura.png" alt="Logo Alura">
-            </header>
-            <section class="container11">
-                <div class="textarea1">
-                    <textarea id="textarea" name="textarea" placeholder="Ingrese el texto aquí:"
-                        oninput="ocultarElemento(); ajustarEntrada();"></textarea>
-                </div>
-                <div class="botonLimpiar">
-                    <button class="botonLimpiar1" onclick="limpiar()">
-                        <img class="imgbtn" src="../ASSETS/images/Limpiar1.png" alt="Icono Limpiar">
-                        <span>Limpiar</span>
-                    </button>
-                </div>
-                <div class="aviso1">
-                    <p><img src="../ASSETS/images/bi_exclamation-circle-fill.png" alt="exclamation-circle">
-                        Sólo letras minúsculas y sin acentos</p>
-                </div>
-                <div class="botones">
-                    <button class="botonEncriptar" onclick="encriptar()">
-                        <img class="imgbtn" src="../ASSETS/images/EncriptImg1A.png" alt="Icono Encriptado">
-                        <span>Encriptar</span>
-                    </button>
-                    <button class="botonDesEncriptar" onclick="desencriptar()">
-                        <img class="imgbtn" src="../ASSETS/images/DesEncriptImg1A.png" alt="Icono DesEncriptado">
-                        <span>Desencriptar</span>
-                    </button>
-                </div>
-            </section>
-        </div>
-        <div class="container2" id="mi-contenedor2">
-            <section class="container12">
-                <div class="rect1">
-                    <div class="imagen1">
-                        <img src="../ASSETS/images/Muñeco.png" alt="Imagen Buscador" class="img1">
+        <div class="container01">
+            <div class="container1">
+                <header class="container10">
+                    <img id="imgLogo" src="../ASSETS/images/logoAlura.png" alt="Logo Alura">
+                </header>
+                <section class="container11">
+                    <div class="textarea1">
+                        <textarea id="textarea" name="textarea" placeholder="Ingrese el texto aquí:"
+                            oninput="ocultarElemento(); ajustarEntrada();"></textarea>
                     </div>
-                    <div class="textos2" id="texto2">
-                        <p id="textne">Ningún mensaje fue encontrado</p>
-                        <p id="textdescrip">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <div class="botonLimpiar">
+                        <button class="botonLimpiar1" onclick="limpiar()">
+                            <img class="imgbtn1" src="../ASSETS/images/Limpiar1.png" alt="Icono Limpiar">
+                            <span>Limpiar</span>
+                        </button>
                     </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="container22" id="mi-contenedor22">
-            <section class="container12">
-                <div class="rect2">
-                    <div class="textarea2">
-                        <textarea id="textarea2" name="textarea2"></textarea>
+                    <div class="aviso1">
+                        <p><img src="../ASSETS/images/bi_exclamation-circle-fill.png" alt="exclamation-circle">
+                            Sólo letras minúsculas y sin acentos</p>
                     </div>
-                    <div class="alterna">
-                        <div class="boton2">
-                            <button class="botonCopiar" id="botonCopiar" onclick="copiar()">
-                                Copiar
-                            </button>
+                    <div class="botones">
+                        <button class="botonEncriptar" onclick="encriptar()">
+                            <img class="imgbtn2" src="../ASSETS/images/EncriptImg1A.png" alt="Icono Encriptado">
+                            <span>Encriptar</span>
+                        </button>
+                        <button class="botonDesEncriptar" onclick="desencriptar()">
+                            <img class="imgbtn2" src="../ASSETS/images/DesEncriptImg1A.png" alt="Icono DesEncriptado">
+                            <span>Desencriptar</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <div class="container2" id="mi-contenedor2">
+                <section class="container12">
+                    <div class="rect1">
+                        <div class="imagen1">
+                            <img src="../ASSETS/images/Muñeco.png" alt="Imagen Buscador" class="img1">
                         </div>
-                        <div class="boton3">
-                            <button class="botonPegar" id="botonPegar" onclick="pegar()">
-                                Pegar
-                            </button>
+                        <div class="textos2" id="texto2">
+                            <p id="textne">Ningún mensaje fue encontrado</p>
+                            <p id="textdescrip">Ingresa el texto que desees encriptar o desencriptar.</p>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
 
+            <div class="container22" id="mi-contenedor22">
+                <section class="container12">
+                    <div class="rect2">
+                        <div class="textarea2">
+                            <textarea id="textarea2" name="textarea2"></textarea>
+                        </div>
+                        <div class="alterna">
+                            <div class="boton2">
+                                <button class="botonCopiar" id="botonCopiar" onclick="copiar()">
+                                    Copiar
+                                </button>
+                            </div>
+                            <div class="boton3">
+                                <button class="botonPegar" id="botonPegar" onclick="pegar()">
+                                    Pegar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         <div class="container3">
             <footer>
                 <div class="col-lg-6">

@@ -1,93 +1,33 @@
-/* **  ESTILOS GENERALES  ** */ 
-/*
-  Containers 
-  0
-  ------------------------
-  | 1 -->  10     | 2    | 
-  --|-------------|      |
-  | 11            |      |  
-  |               |      | 
-  |               |      |
-  -----------------------
-  | 3                    | 
-  -----------------------
-
-*/
-
-
 * {
-    margin: 0;
-    padding: 0; 
+    padding: 0px;
+    margin: 0px;
   }
-  /* .estilo-x {
-    font-size: calc(1em + 1vw);
-    line-height: 1em;
-    padding: 1em;
-    margin: 1em;} */
-
-  html {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-  }  
   
   body {
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
     background-color: #f3f5fc;
-    font-family: "Inter", sans-serif;  
+    font-family: "Inter", sans-serif;
   }
-
- /* ** CONTENEDOR PRINCIPALES Y SUBCONTENEDORES  ** */   
-
-  .container0{ 
+  .container0{
     display: flex;
-    flex-basis: auto; 
+    flex-direction: column;
     height: 100vh;
-    flex-direction: column; 
-    flex-wrap: wrap; 
-    
-    /* max-width: 1440px; */
-    margin: 0 auto;
-    overflow: hidden;    
+  }
+  .container1{     
+    height: 25vh; 
   }
 
   .container01{
-    display: flex;
-    flex:1;
-    flex-direction: row;
-}
-  
-  /* **  COMPONENTES DEL CONTAINER 1   ** */
-  .container1{ 
-    flex: 1;
-    display: block;
-    width: 70%;
-    height: 95%;
-    /* padding: 10px; */
-    float: left;
-    box-sizing: border-box;    
+    background: lightblue;
+    height: 90vh;
   }
-
   .container10{
-    flex: 1;
-    height: 13.2%;
-    width: 100%;
-    
-    /* flex-direction: row;
-    justify-content: space-between; */
-    
+    background: orange;
+    flex-basis: 37.38%;
+    height: 10vh;
   }
-
-  /* .container10 a {
-    margin-top: 40px; 
-    margin-right: 10%;
-    height: 20px; 
-  } */
-                /* **    COMPONENTES DEL CONTAINER 10          ** */  
-
-        /* **  HEADER ** */ 
-  
-   #imgLogo{
+  #imgLogo{
     /* width: 120px;
     height: 48px;
     margin-left: 3%;
@@ -98,22 +38,15 @@
     margin-left: 3.97%;
     margin-top: 4.1%;
   }
-
-  /*  **  ------------------------------------------ ** */
-  
-  .container11 {
+  .container11{
+    background: red;
     flex: 2;
-   width: 100%;
-   height: 86.8%;      
+    width: 100%;
+    height: 90vh;  
   }
-  
-                 /* **    COMPONENTES DEL CONTAINER 11          ** */  
-  
-  .textarea1{  
-    width: 70%;
-    height: 71.12%;
-    margin-left: 23.81%;
-    display: flex;    
+  .textarea1{
+    background: #bbce10;
+    display: flex;
   }
   
   #textarea{
@@ -131,9 +64,9 @@
     resize: none;
     outline: none;
   }
-  
+
   .botonLimpiar{
-    display: flex;
+    background: #052096;
     width: 70%;
     height: 9.45%;
     margin: auto; 
@@ -163,22 +96,36 @@
   .botonLimpiar1:active{
     background-color: #D8DFE8 ;
     color:#0A3871;
-  } 
+  }
+
+  .imgbtn1{
+    margin-right: 10%;
+    width: 25%;
+    height: 50%;
+  }
   
+  /* .textarea1{  
+    width: 70%;
+    height: 71.12%;
+    margin-left: 23.81%;
+    display: flex;    
+  } */
   .aviso1{
+    background: #be3a05;
     width: 70%;
     height: 4.03%;  
     margin-left: 27.148%;
     display: flex;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
   .aviso1 img{
-    width: 1.5vw;
+    width: 2.5vw;
   }
   
   .botones{
+    background: #b806a9;
     width: 70%;  
     height: 15.41%;
     margin-left: 27.148%;
@@ -190,45 +137,39 @@
     justify-content: space-between;
     text-align: center;
   }
-  
-  .botones img{
+
+
+
+  /* .botones img{
     width: 3vw;
     height: 5vh;
-  }
+  } */
 
  
 
-  .botonEncriptar{
+  .botonEncriptar, .botonDesEncriptar{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 47.2%;                  /*  300px;  */
     height: 70%;              /*  67px;  */
-    /* border-radius: 10px; */
-    background: #0A3871;
-    font-size: 2.5vw;
-    color:#f3f5fc;
+    /* border-radius: 10px; */    
+    font-size: 3.5vw;
     padding: 0.5rem 1rem; /* Relleno del botón */
     border: none; /* Sin borde */
     border-radius: 24px; /* Borde redondeado */
     cursor: pointer; /* Cursor de tipo puntero */
+    justify-content: space-between;
+  }
+  .botonEncriptar{
+    background: #0A3871;
+    color:#f3f5fc;
   }
   
   .botonDesEncriptar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 47.2%;                  /*  300px;  */
-    height: 70%;              /*  67px;  */
-    background: #D8DFE8;
-    font-size: 2.5vw;
+    background: #D8DFE8;    
     color:#0A3871;
-    padding: 0.5rem 1rem; /* Relleno del botón */
-    border-color: #0A3871; /* Sin borde */
-    border-radius: 24px; /* Borde redondeado */
-    cursor: pointer; /* Cursor de tipo puntero */
   }
   
   .botonEncriptar:active{
@@ -241,19 +182,17 @@
     color:#f3f5fc;
   }
 
-  .imgbtn{
-    margin-right: 10%;
-    width: 20%;
-    height: 80%;
+  .imgbtn2{
+    width: 25%;
+    height: 25%;
   }
-  
-  
 
 
-   /* **  COMPONENTES DEL CONTAINER 2   ** */
+
+  /* **  COMPONENTES DEL CONTAINER 2   ** */
   .container2, .container22{    
-    width: 30%;
-    height: 95%;
+    /* width: 30%;*/
+    height: 75%;  
     margin: auto;
     justify-content: center;
     align-items: center; /* Centrado vertical */
@@ -279,17 +218,19 @@
   }
   
   .imagen1{
-    width: 336px;
-    height: 304px;
-    margin: auto;/* margin-top: 28%; */
-  }
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 10%;   }
   
   .textos2{
     width: 336px;
     height: auto;
     margin-top: 32px;
   }
-  
+
+
+   
   #textne{
     font-family: 'Inter';
     font-size: 24px;
@@ -408,14 +349,11 @@
  
 
 
-
-
-
    /* **  COMPONENTES DEL CONTAINER 3  ** */ 
 
-  .container3{
+   .container3{
     width: 100%;
-    height: 5%;    
+    height: 10vh;    
   }
  
   
@@ -430,6 +368,7 @@
     color: white;
     text-align: center;
     padding: .10% 0;    
+    font-size: 0.8rem;
   }
 
   .font-weight-bold{
@@ -444,7 +383,7 @@
   
   .col-lg-3{
     width: 25%; /* 3 de las 12 columnas */
-    float: right;
+    float: left;
   }
   .col2{
     width: 10%; /* 2 de las 12 columnas */
@@ -550,138 +489,39 @@
   }
   
 
-  /* ** CODIGO MEDIA SCREEN ** */
-  
-  @media screen and (max-width:800px){
-    .container0{
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-  
 
-  /* @media screen and (max-width:800px){
-    .container1, .container10, .container11, .container12 .container2, .container22, .container3, .container0{
-      width: 100%;
-      font-size: 1em;
-      display: block;
-    }
-    
+
+
+
+
+
+
+
+
+  /* .container2{
+    background: slateblue;
+  }
+  .imagen1{
+    background: rgb(1, 238, 255);
+  }
+  .textos2{
+    background: rgb(16, 235, 9);
+  }
+  .container22{
+    background: violet;
+  }
+  .container3{
+    background: darkslateblue;
+  }
+  .col-lg-6{
+    background: rgb(248, 162, 195);
+  }
+  .col-lg-3{
+    background: rgb(236, 107, 157);
+  }
+  .col10{
+    background: rgb(253, 54, 130);
+  }
+  .col2{
+    background: rgb(139, 6, 57);
   } */
-
-  /* @media screen and (max-width:800px){
-    .container0{
-      width: 100%;      
-    }
-    .container1{
-      display: block;
-    }
-
-  } */
-
-
-  /* Estilos para dispositivos móviles */
-
-/* @media screen and (max-width:480px){
-  .container0{
-    display: block;
-  } 
-} */
-
-
-/* 
-@media screen and  (max-width: 480px) {
-  .container11 {
-    padding: 10px;
-    height: 100%;
-  }
-  
-  .botonLimpiar {
-    margin-top: 10px;
-  }
-  
-  .aviso1 {
-    margin-top: 10px;
-  }
-  
-  .botones {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .botonEncriptar,
-  .botonDesEncriptar {
-    width: 100%;
-    max-width: none;
-  }
-  
-  .container11 {
-    display: block;
-    overflow: scroll;
-  }
-
-  .container2 {
-    display: block;
-  }
-
-  .container3 {
-    display: block;
-    font-size: 0.9rem;
-  }
-  
-  .container22 {
-    display: none;
-  }
-
-  .footer{
-    display:block;
-    font-size: 0.9rem;
-  }
-} */
-
-/* Estilos para pantallas aún más pequeñas (teléfonos) */
-
-/* @media screen and (max-width: 480px) {
-  .container11 {
-    padding: 5px;
-  }
-  
-  .botonLimpiar {
-    margin-top: 5px;
-  }
-  
-  .aviso1 {
-    margin-top: 5px;
-  }
-  
-  .botones {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-  }
-  
-  .botonEncriptar,
-  .botonDesEncriptar {
-    width: 100%;
-    max-width: none;
-  }
-  
-  .container2 {
-    display: block;
-  }
-
-  .container22 {
-    display: none;
-  }
-
-  .container3 {
-    display: block;
-    font-size: 0.4rem;
-  }
-
-  .footer{
-    display:block;
-    font-size: 0.9rem;
-  }
-} */
