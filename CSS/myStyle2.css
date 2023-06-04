@@ -9,45 +9,195 @@
     background-color: #f3f5fc;
     font-family: "Inter", sans-serif;
   }
+
+   /* **  COMPONENTES DEL CONTAINER 0  ** */ 
   .container0{
     display: flex;
     flex-direction: column;
     height: 100vh;
-  }
-  .container1{     
-    height: 25vh; 
-  }
+  } 
 
-  .container01{
-    background: lightblue;
+   /* **  COMPONENTES DEL CONTAINER 01  ** */ 
+
+  .container01{    
     height: 90vh;
   }
-  .container10{
-    background: orange;
-    flex-basis: 37.38%;
-    height: 10vh;
-  }
-  #imgLogo{
-    /* width: 120px;
-    height: 48px;
-    margin-left: 3%;
-    margin-top: 4%; */
 
+  .container1{     
+    height: 40%; 
+  }
+
+   /* **  COMPONENTES DEL CONTAINER 1  ** */ 
+
+  .container10{    
+    flex-basis: 37.38%;
+    height: 20%;
+  }
+
+  /* **  COMPONENTES DEL CONTAINER 10  ** */ 
+  #imgLogo{
     width: 11.90%;
     height: 37.38%;
     margin-left: 3.97%;
     margin-top: 4.1%;
   }
+
+
   .container11{
-    background: red;
     flex: 2;
     width: 100%;
-    height: 90vh;  
+    height: 80%;  
   }
-  .textarea1{
-    background: #bbce10;
+
+   /* **  COMPONENTES DEL CONTAINER 11  ** */ 
+
+   .textarea1{
     display: flex;
+    height: 60%;
   }
+
+
+  .container110{
+    display: flex;
+    height: 20% ;
+    width: 100vw;
+  }
+
+  .aviso1{
+    width: 60%;
+    /* height: 5%;   */
+    margin-left: 10%;     
+    display: flex;
+    /* align-items: center; */
+    font-size: 2.5vw;
+  }
+
+  .aviso1 img{
+    width: 2.5vw;
+  }
+
+  .botonLimpiar{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }  
+  
+  .botonLimpiar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    background: #D8DFE8;
+    font-size: 2vh;
+    color:#0A3871;
+    padding: 0; /* Relleno del botón */
+    border-color: #0A3871; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado 10px*/
+    cursor: pointer; /* Cursor de tipo puntero */    
+    margin-right: 20%;    
+  }
+
+  .botonLimpiar1:active{
+    background-color: #D8DFE8 ;
+    color:#0A3871;
+  }
+
+  .imgbtn1{
+    margin-right: 10%;
+    width: 25%;
+    height: 50%;
+  }
+
+
+  
+  .container112{
+    width: 100%;  
+    height: 20%;    
+    /* margin-bottom: 72px; */
+    display: flex;
+    padding: 0.5%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .botones{   
+    width: 100%;  
+    height: 100%;        
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .botonEncriptar, .botonDesEncriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;                  /*  300px;  */
+    height: 70%;              /*  67px;  */
+    /* border-radius: 10px; */    
+    font-size: 5vw;
+    padding: 0.5rem 0.5rem; /* Relleno del botón */
+    border: none; /* Sin borde */
+    border-radius: 24px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de tipo puntero */
+    justify-content: space-between;    
+  }
+  .botonEncriptar{
+    background: #0A3871;
+    color:#f3f5fc;
+    margin-left: 15%;
+  }
+  
+  .botonDesEncriptar{
+    background: #D8DFE8;    
+    color:#0A3871;
+    margin-right: 15%;
+  }
+  
+  .botonEncriptar:active{
+    background-color: #D8DFE8 ;
+    color:#0A3871;
+  }  
+  
+  .botonDesEncriptar:active{
+    background: #0A3871;
+    color:#f3f5fc;
+  }
+
+  .imgbtn2{
+    width: 15%;
+    height: 100%;
+  }
+
+
+  /* **  COMPONENTES DEL CONTAINER 2 y 22   ** */
+  .container2, .container22{    
+    /* width: 30%;*/
+    height: 60%;  
+    margin: auto;
+    justify-content: center;
+    align-items: center; /* Centrado vertical */
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  
+     /* **  COMPONENTES DEL CONTAINER 3  ** */ 
+
+     .container3{
+      width: 100%;
+      height: 10vh;    
+    }
+
   
   #textarea{
     color: #0A3871;
@@ -65,141 +215,8 @@
     outline: none;
   }
 
-  .botonLimpiar{
-    background: #052096;
-    width: 70%;
-    height: 9.45%;
-    margin: auto; 
-    margin-left: 23.81%;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-  }  
-  
-  .botonLimpiar1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 20%;
-    height: 60%;
-    background: #D8DFE8;
-    font-size: 1.9vw;
-    color:#0A3871;
-    padding: 0; /* Relleno del botón */
-    border-color: #0A3871; /* Sin borde */
-    border-radius: 10px; /* Borde redondeado 10px*/
-    cursor: pointer; /* Cursor de tipo puntero */    
-    margin-left: 80%;    
-  }
-
-  .botonLimpiar1:active{
-    background-color: #D8DFE8 ;
-    color:#0A3871;
-  }
-
-  .imgbtn1{
-    margin-right: 10%;
-    width: 25%;
-    height: 50%;
-  }
-  
-  /* .textarea1{  
-    width: 70%;
-    height: 71.12%;
-    margin-left: 23.81%;
-    display: flex;    
-  } */
-  .aviso1{
-    background: #be3a05;
-    width: 70%;
-    height: 4.03%;  
-    margin-left: 27.148%;
-    display: flex;
-    align-items: center;
-    font-size: 2.5vw;
-  }
-
-  .aviso1 img{
-    width: 2.5vw;
-  }
-  
-  .botones{
-    background: #b806a9;
-    width: 70%;  
-    height: 15.41%;
-    margin-left: 27.148%;
-    /* margin-bottom: 72px; */
-    top: 70%;  /* 60px */   
-    display: flex;
-    padding: 0.5%;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-
-
-  /* .botones img{
-    width: 3vw;
-    height: 5vh;
-  } */
-
  
-
-  .botonEncriptar, .botonDesEncriptar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 47.2%;                  /*  300px;  */
-    height: 70%;              /*  67px;  */
-    /* border-radius: 10px; */    
-    font-size: 3.5vw;
-    padding: 0.5rem 1rem; /* Relleno del botón */
-    border: none; /* Sin borde */
-    border-radius: 24px; /* Borde redondeado */
-    cursor: pointer; /* Cursor de tipo puntero */
-    justify-content: space-between;
-  }
-  .botonEncriptar{
-    background: #0A3871;
-    color:#f3f5fc;
-  }
   
-  .botonDesEncriptar{
-    background: #D8DFE8;    
-    color:#0A3871;
-  }
-  
-  .botonEncriptar:active{
-    background-color: #D8DFE8 ;
-    color:#0A3871;
-  }  
-  
-  .botonDesEncriptar:active{
-    background: #0A3871;
-    color:#f3f5fc;
-  }
-
-  .imgbtn2{
-    width: 25%;
-    height: 25%;
-  }
-
-
-
-  /* **  COMPONENTES DEL CONTAINER 2   ** */
-  .container2, .container22{    
-    /* width: 30%;*/
-    height: 75%;  
-    margin: auto;
-    justify-content: center;
-    align-items: center; /* Centrado vertical */
-    display: flex;
-    box-sizing: border-box;
-  }
- 
   
   
   .container12{
@@ -348,14 +365,6 @@
   }
  
 
-
-   /* **  COMPONENTES DEL CONTAINER 3  ** */ 
-
-   .container3{
-    width: 100%;
-    height: 10vh;    
-  }
- 
   
   /* ****** Footer  **** */
   
@@ -487,41 +496,3 @@
     border: none;
     cursor: pointer; /* Cursor de tipo puntero */ 
   }
-  
-
-
-
-
-
-
-
-
-
-
-  /* .container2{
-    background: slateblue;
-  }
-  .imagen1{
-    background: rgb(1, 238, 255);
-  }
-  .textos2{
-    background: rgb(16, 235, 9);
-  }
-  .container22{
-    background: violet;
-  }
-  .container3{
-    background: darkslateblue;
-  }
-  .col-lg-6{
-    background: rgb(248, 162, 195);
-  }
-  .col-lg-3{
-    background: rgb(236, 107, 157);
-  }
-  .col10{
-    background: rgb(253, 54, 130);
-  }
-  .col2{
-    background: rgb(139, 6, 57);
-  } */
